@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkiye Gezi Rehberi Asistani</title>
+<style>
+  :root {
+    --bg: #faf6f0;
+    --panel: #ffffff;
+    --border: #e8ddd0;
+    --text: #2e2620;
+    --muted: #8a7c6c;
+    --accent: #c1682f;
+    --accent-dark: #9c521f;
+    --user-bubble: #2e2620;
+    --user-text: #faf6f0;
+    --assistant-bubble: #f3ece2;
+    --shadow: 0 2px 10px rgba(46, 38, 32, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px 16px;
+  }
+
+  .app {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  header {
+    text-align: center;
+    padding: 8px 0 4px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  header p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: var(--accent-dark);
+    background: #fbe8d8;
+    border: 1px solid #f0cba4;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .chip {
+    font-size: 0.82rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 7px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .chip:hover {
+    background: #fbe8d8;
+    border-color: var(--accent);
+  }
+
+  .chat {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    min-height: 360px;
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .msg {
+    display: flex;
+    flex-direction: column;
+    max-width: 82%;
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .msg.user { align-self: flex-end; align-items: flex-end; }
+  .msg.assistant { align-self: flex-start; align-items: flex-start; }
+
+  .bubble {
+    padding: 10px 14px;
+    border-radius: 14px;
+    line-height: 1.45;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+  }
+
+  .msg.user .bubble {
+    background: var(--user-bubble);
+    color: var(--user-text);
+    border-bottom-right-radius: 4px;
+  }
+
+  .msg.assistant .bubble {
+    background: var(--assistant-bubble);
+    color: var(--text);
+    border-bottom-left-radius: 4px;
+  }
+
+  .meta {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 4px;
+    padding: 0 4px;
+  }
+
+  .typing {
+    display: flex;
+    gap: 4px;
+    padding: 12px 14px;
+  }
+
+  .typing span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--muted);
+    animation: bounce 1.2s infinite;
+  }
+
+  .typing span:nth-child(2) { animation-delay: 0.15s; }
+  .typing span:nth-child(3) { animation-delay: 0.3s; }
+
+  @keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+    30% { transform: translateY(-4px); opacity: 1; }
+  }
+
+  form {
+    display: flex;
+    gap: 8px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 13px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    font-size: 0.95rem;
+    outline: none;
+  }
+
+  input[type="text"]:focus {
+    border-color: var(--accent);
+  }
+
+  button {
+    padding: 0 20px;
+    border-radius: 12px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  button:hover:not(:disabled) { background: var(--accent-dark); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  footer {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+    padding-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>🗺️ Turkiye Gezi Rehberi Asistani</h1>
+    <p>Kapadokya, Pamukkale, Efes, Nemrut Dagi, Oludeniz ve Safranbolu hakkinda sorular sorabilirsin.</p>
+    <span class="badge">🔒 Yerel RAG · Foundry Local ile tamamen cevrimdisi calisir</span>
+  </header>
+
+  <div class="chips" id="chips">
+    <div class="chip">Kapadokya'daki peri bacalari nasil olustu?</div>
+    <div class="chip">Pamukkale'deki Kleopatra Havuzu'nun ozelligi nedir?</div>
+    <div class="chip">Oludeniz hangi spor icin unludur?</div>
+    <div class="chip">Nemrut Dagi UNESCO listesine hangi yil alindi?</div>
+  </div>
+
+  <div class="chat" id="chat">
+    <div class="msg assistant">
+      <div class="bubble">Merhaba! Bilgi tabanimdaki 6 gezi noktasi hakkinda soru sorabilirsin. Kapsam disi bir soru sorarsan sana "bilmiyorum" derim — uydurma cevap vermem.</div>
+    </div>
+  </div>
+
+  <form id="form">
+    <input type="text" id="question" placeholder="Sorunu yaz..." autocomplete="off" autofocus>
+    <button type="submit" id="send">Gonder</button>
+  </form>
+
+  <footer>Bu asistan sadece 6 dokumandaki bilgiyi kullanir; genel bilgi kaynagi degildir.</footer>
+</div>
+
+<script>
+  const chat = document.getElementById('chat');
+  const form = document.getElementById('form');
+  const input = document.getElementById('question');
+  const sendBtn = document.getElementById('send');
+  const chips = document.getElementById('chips');
+
+  function addMessage(role, text, meta) {
+    const msg = document.createElement('div');
+    msg.className = 'msg ' + role;
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    bubble.textContent = text;
+    msg.appendChild(bubble);
+    if (meta) {
+      const metaEl = document.createElement('div');
+      metaEl.className = 'meta';
+      metaEl.textContent = meta;
+      msg.appendChild(metaEl);
+    }
+    chat.appendChild(msg);
+    chat.scrollTop = chat.scrollHeight;
+    return msg;
+  }
+
+  function addTyping() {
+    const msg = document.createElement('div');
+    msg.className = 'msg assistant';
+    msg.id = 'typing-indicator';
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble typing';
+    bubble.innerHTML = '<span></span><span></span><span></span>';
+    msg.appendChild(bubble);
+    chat.appendChild(msg);
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function removeTyping() {
+    const el = document.getElementById('typing-indicator');
+    if (el) el.remove();
+  }
+
+  async function sendQuestion(question) {
+    if (!question.trim()) return;
+
+    addMessage('user', question);
+    input.value = '';
+    input.disabled = true;
+    sendBtn.disabled = true;
+    addTyping();
+
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question })
+      });
+      const data = await res.json();
+      removeTyping();
+      addMessage('assistant', data.answer, `${data.elapsed}s`);
+    } catch (err) {
+      removeTyping();
+      addMessage('assistant', 'Bir hata olustu, sunucuya ulasilamadi.');
+    } finally {
+      input.disabled = false;
+      sendBtn.disabled = false;
+      input.focus();
+    }
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    sendQuestion(input.value);
+  });
+
+  chips.addEventListener('click', (e) => {
+    if (e.target.classList.contains('chip')) {
+      sendQuestion(e.target.textContent);
+    }
+  });
+</script>
+</body>
+</html>
