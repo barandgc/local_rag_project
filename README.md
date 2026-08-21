@@ -35,6 +35,8 @@ rag_project/
   retrieval.py            # get_top_chunks(query, top_k)
   qa.py                    # answer_query(question) - uctan uca RAG
   test_qa.py                # Cevaplanabilir/cevaplanamaz soru testleri + sure olcumu
+  app.py                      # Flask web arayuzu
+  templates/index.html         # Sohbet arayuzu (HTML/CSS/JS)
   main.py                    # Hafta 1 "hello model" testi
   requirements.txt
   .gitignore
@@ -51,6 +53,9 @@ venv\Scripts\python ingest.py
 
 # Test sorulariyla dogrula
 venv\Scripts\python test_qa.py
+
+# Web arayuzunu baslat (http://127.0.0.1:5000)
+venv\Scripts\python app.py
 
 # Tek bir soru sormak icin (Python icinden)
 python -c "from qa import answer_query; print(answer_query('Pamukkale nasil olusmustur?'))"
@@ -76,7 +81,7 @@ python -c "from qa import answer_query; print(answer_query('Pamukkale nasil olus
 - **Chunk stratejisi**: Her dokuman paragraf bazinda (bos satirla ayrilmis) chunk'lara bolunuyor — 6 dokuman x 3 paragraf = 18 chunk. Kisa dokumanlar icin bu, cumle bazli bolmeden daha anlamli baglam parcalari verdi.
 - **Embedding depolama**: Basitlik ve okunabilirlik icin embedding vektorleri SQLite'ta JSON string olarak saklaniyor (BLOB/numpy yerine). Kucuk veri setleri icin performans farki onemsiz.
 - **Sorumlu cikti**: Sistem prompt'u modele sadece baglamdaki bilgiyi kullanmasini ve bilmiyorsa "Bu konuda bilgim yok." demesini soyluyor; bos sorgular LLM'e gitmeden dogrudan bu cevabi donduruyor.
-- **Arayuz yok (bilinçli tercih)**: Bu proje CLI/web arayuzu icermiyor; odak, RAG pipeline'inin (ingestion -> retrieval -> generation) dogru calismasi uzerine.
+- **Web arayuzu**: `app.py` (Flask) + `templates/index.html` — sohbet tarzi, ornek soru chip'leri ve yanit suresi gosterimi olan basit bir web arayuzu. Flask baslarken embedding/chat modellerini onceden yukler, boylece ilk kullanici istegi model indirme/yukleme suresiyle geciktirilmez.
 
 ## Bilinen Kisitlamalar
 
