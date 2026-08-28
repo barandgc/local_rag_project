@@ -20,7 +20,7 @@ Soru --> [embed] --> SQLite'ta cosine similarity ile en alakali chunk'lari bul
 | Embedding  | `qwen3-embedding-0.6b`  | 478 MB |
 | Chat       | `phi-4-mini`             | 2.2 GB |
 
-> Not: Ilk denemede chat modeli olarak `qwen2.5-0.5b` kullanildi ancak cok kucuk oldugu icin (ozellikle Turkce'de) tutarsiz/halusinasyonlu cevaplar uretti. `phi-4-mini`'ye gecince cevap kalitesi buyuk olcude iyilesti — bu, RAG projelerinde chat modeli seciminin embedding modeli kadar onemli oldugunu gosteren iyi bir ders.
+> Not: Ilk denemede chat modeli olarak `qwen2.5-0.5b` kullanıldı ancak cok kucuk oldugu icin (ozellikle Turkce'de) tutarsiz/halusinasyonlu cevaplar uretti. `phi-4-mini`'ye gecince cevap kalitesi buyuk olcude iyilesti — bu, RAG projelerinde chat modeli seciminin embedding modeli kadar onemli oldugunu gosteren iyi bir ders.
 
 ## Proje Yapisi
 
