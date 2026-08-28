@@ -1,4 +1,4 @@
-# Yerel RAG Asistani — Turkiye'nin Doga ve Tarih Harikalari
+# Yerel RAG Asistanı — Türkiye'nin Doğa ve Tarih Harikaları
 
 Microsoft Foundry Local kullanarak tamamen cevrimdisi calisan bir RAG (Retrieval-Augmented Generation) soru-cevap asistani. Bilgi tabani, Turkiye'nin 6 populer gezi noktasi (Kapadokya, Pamukkale, Efes, Nemrut Dagi, Oludeniz, Safranbolu) hakkinda kisa dokumanlardan olusuyor.
 
