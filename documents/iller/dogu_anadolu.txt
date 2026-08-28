@@ -1,0 +1,139 @@
+Erzurum - Çifte Minareli Medrese: İki minaresiyle tanınan, Selçuklu dönemine ait taş işçiliğiyle bilinen bir medresedir.
+
+Erzurum - Palandöken Kayak Merkezi: Türkiye'nin tanınan kış sporları merkezlerinden biridir.
+
+Erzurum - Erzurum Kalesi: Şehrin merkezinde yer alan, farklı dönemlerden izler taşıyan tarihi bir kaledir.
+
+Erzurum - Tortum Şelalesi: Yüksek bir kayalıktan döken, bölgenin ünlü doğal şelalelerinden biridir.
+
+Erzurum - Üç Kümbetler: Selçuklu ve Osmanlı dönemine ait taş mezar anıtlarıdır.
+
+Erzincan - Girlevik Şelalesi: Üzümlü ilçesinde yer alan, güçlü su akışıyla bilinen doğal bir şelaledir.
+
+Erzincan - Ergan Dağı Kayak Merkezi: Kış aylarında kayak için ziyaret edilen bir dağ merkezidir.
+
+Erzincan - Altıntepe Höyüğü: Urartu dönemine ait kalıntılarıyla bilinen bir ören yeridir.
+
+Erzincan - Kemah Kalesi: Fırat Nehri kıyısında, yüksek bir tepede yer alan tarihi bir kaledir.
+
+Erzincan - Mengücek Gazi Türbesi: Kemah ilçesinde yer alan, bölgenin ilk beyliğine ait tarihi bir türbedir.
+
+Kars - Ani Ören Yeri: Ortaçağdan kalma kilise ve saray kalıntılarıyla bilinen, sınır hattında geniş bir antik kenttir.
+
+Kars - Kars Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Kars - Çıldır Gölü: Kış aylarında donan yüzeyinde buz pateni yapılan, yüksek rakımlı bir göldür.
+
+Kars - Sarıkamış Kayak Merkezi: Çam ormanları içindeki pisti ile bilinen bir kayak merkezidir.
+
+Kars - Taş Köprü: Kars Çayı üzerinde yer alan tarihi bir taş köprüdür.
+
+Ağrı - Ağrı Dağı: Türkiye'nin en yüksek dağı olan, Nuh'un Gemisi efsanesiyle anılan bir yanardağdır.
+
+Ağrı - İshak Paşa Sarayı: Doğubayazıt ilçesinde yer alan, taş işçiliğiyle ünlü tarihi bir sarayıdır.
+
+Ağrı - Diyadin Kanyonu: Termal kaynakları ve kanyon manzarasıyla bilinen bir vadidir.
+
+Ağrı - Balık Gölü: Yüksek rakımlı, alabalık üretimiyle bilinen doğal bir göldür.
+
+Ağrı - Nuh'un Gemisi Milli Parkı: Ağrı Dağı eteklerinde yer alan, efsaneyle ilişkilendirilen bir milli parktır.
+
+Ardahan - Çıldır Gölü: Kars sınırında yer alan, kış aylarında donan yüzeyiyle bilinen bir göldür.
+
+Ardahan - Yalnızçam Ormanları: Zengin bitki örtüsüyle bilinen geniş bir orman bölgesidir.
+
+Ardahan - Posof: Yeşil vadileri ve doğa güzellikleriyle bilinen bir sınır ilçesidir.
+
+Ardahan - Ardahan Kalesi: Şehir merkezinde yer alan tarihi bir kaledir.
+
+Ardahan - Cevizli Şelalesi: Doğa yürüyüşleriyle ulaşılan küçük bir şelaledir.
+
+Iğdır - Ağrı Dağı Etekleri: Ağrı Dağı'nın Iğdır tarafındaki eteklerinde yer alan geniş ovalardır.
+
+Iğdır - Karasu Kanyonu: Derin vadisi ve doğa manzarasıyla bilinen bir kanyondur.
+
+Iğdır - Iğdır Ovası: Meyve bahçeleri ve kayısı üretimiyle bilinen verimli bir ovadır.
+
+Iğdır - Aras Nehri Kıyısı: Sınır boyunca akan Aras Nehri'nin kıyı bölgesidir.
+
+Iğdır - Iğdır Müzesi: Bölgenin tarihi eserlerinin sergilendiği bir müzedir.
+
+Van - Van Kalesi: Urartu dönemine ait, şehre hakim büyük bir kaya kalesidir.
+
+Van - Akdamar Adası: Van Gölü'nde yer alan, tarihi Ermeni kilisesiyle bilinen küçük bir adadır.
+
+Van - Van Gölü: Türkiye'nin en büyük gölü olan, alkali sularıyla bilinen bir göldür.
+
+Van - Muradiye Şelalesi: Kış aylarında kısmen donan, güçlü akışıyla bilinen bir şelaledir.
+
+Van - Hoşap Kalesi: Ortaçağdan kalma, görkemli görünümüyle bilinen tarihi bir kaledir.
+
+Muş - Malazgirt Meydan Muharebesi Anıtı: 1071 Malazgirt Savaşı'nı anan tarihi bir anıt alanıdır.
+
+Muş - Muş Ovası: Geniş tarım alanlarıyla bilinen verimli bir ovadır.
+
+Muş - Muş Ulu Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Muş - Hasköy: Doğa güzellikleri ve tarihi izleriyle bilinen bir ilçedir.
+
+Muş - Kayalıdere Kalesi: Urartu dönemine ait tarihi bir kale kalıntısıdır.
+
+Bitlis - Bitlis Kalesi: Şehre hakim bir tepede yer alan, taş işçiliğiyle bilinen tarihi bir kaledir.
+
+Bitlis - Nemrut Kalderası: Sönmüş bir yanardağın krater gölüyle bilinen etkileyici bir doğal oluşumdur.
+
+Bitlis - Ahlat Selçuklu Mezarlığı: Üstüne işlenmiş motiflerle bilinen, görkemli Selçuklu mezar taşlarıyla ünlü bir alandır.
+
+Bitlis - Tatvan Van Gölü Kıyısı: Van Gölü'nün Bitlis tarafındaki sahil bölgesidir.
+
+Bitlis - Bitlis Ulu Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Bingöl - Bingöl Kaplıcaları: Termal sularıyla bilinen, sağlık turizmi için ziyaret edilen bir kaplıca bölgesidir.
+
+Bingöl - Karlıova: Kuzey Anadolu ve Doğu Anadolu fay hatlarının kesiştiği nokta olarak bilinen bir ilçedir.
+
+Bingöl - Bingöl Dağları: Peri Suyu'nun kaynaklarını barındıran yüksek dağ silsilesidir.
+
+Bingöl - Genç: Doğa güzellikleri ve tarihi izleriyle bilinen bir ilçedir.
+
+Bingöl - Bingöl Çayı: Şehir merkezinden geçen, kıyısında yürüyüş alanları bulunan bir çayıdır.
+
+Tunceli - Munzur Vadisi Milli Parkı: Zengin bitki ve hayvan çeşitliliğiyle bilinen, doğa tutkunlarının ziyaret ettiği bir milli parktır.
+
+Tunceli - Munzur Suyu: Milli park içinden akan, temiz sularıyla bilinen bir su kaynağıdır.
+
+Tunceli - Pülümür: Yayla havası ve doğa güzellikleriyle bilinen bir ilçedir.
+
+Tunceli - Ovacık: Yüksek rakımı ve doğal güzellikleriyle bilinen bir ilçedir.
+
+Tunceli - Mazgirt Kalesi: Şehre hakim bir tepede yer alan tarihi bir kale kalıntısıdır.
+
+Malatya - Kayısı Bahçeleri: Malatya'nın dünyaca ünlü kayısı üretiminin yapıldığı geniş tarım alanlarıdır.
+
+Malatya - Aslantepe Höyüğü: UNESCO Dünya Mirası listesindeki, erken devlet yapılarına ışık tutan bir höyüktür.
+
+Malatya - Yeşilyurt: Restore edilmiş Osmanlı evleriyle bilinen tarihi bir ilçedir.
+
+Malatya - Malatya Müzesi: Bölgenin tarihi eserlerinin sergilendiği bir müzedir.
+
+Malatya - Fırat Nehri Kıyısı: Doğa yürüyüşleri için uygun bir nehir kıyısı bölgesidir.
+
+Elazığ - Hazar Gölü: Dağlarla çevrili, berrak sularıyla bilinen doğal bir göldür.
+
+Elazığ - Harput: Tarihi kalesi ve eski şehir dokusuyla bilinen, Elazığ'ın tarihi merkezidir.
+
+Elazığ - Buzluk Mağarası: Yaz aylarında bile buzlu kalan ilginç bir doğal mağaradır.
+
+Elazığ - Keban Barajı: Fırat Nehri üzerinde yer alan büyük bir baraj gölüdür.
+
+Elazığ - Harput Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Hakkari - Cilo-Sat Dağları: Buzul gölleri ve yüksek zirveleriyle dağcıların tercih ettiği bir dağ silsilesidir.
+
+Hakkari - Zap Suyu Vadisi: Derin vadisi ve doğa manzarasıyla bilinen bir nehir vadisidir.
+
+Hakkari - Hakkari Kalesi: Şehir merkezinde yer alan tarihi bir kaledir.
+
+Hakkari - Buzul Gölleri: Cilo Dağları'nda yer alan, yüksek rakımlı doğal göllerdir.
+
+Hakkari - Şemdinli: Doğa güzellikleri ve sınır kültürüyle bilinen bir ilçedir.

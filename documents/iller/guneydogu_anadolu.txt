@@ -1,0 +1,89 @@
+Gaziantep - Gaziantep Kalesi: Şehrin merkezinde yer alan, farklı dönemlerden izler taşıyan tarihi bir kaledir.
+
+Gaziantep - Zeugma Mozaik Müzesi: Dünyanın en büyük mozaik koleksiyonlarından birine ev sahipliği yapan bir müzedir.
+
+Gaziantep - Bakırcılar Çarşısı: Geleneksel bakır işlemeciliğinin sürdüğü tarihi bir çarşıdır.
+
+Gaziantep - Hasan Süzer Etnografya Müzesi: Bölgenin geleneksel yaşam tarzını yansıtan bir müzedir.
+
+Gaziantep - Yesemek Açık Hava Müzesi: Hitit dönemine ait taş heykel atölyesi kalıntılarıyla bilinen bir alandır.
+
+Şanlıurfa - Göbeklitepe: Dünyanın bilinen en eski tapınak kalıntılarından biri olan, UNESCO Dünya Mirası listesindeki bir ören yeridir.
+
+Şanlıurfa - Balıklıgöl: İbrahim Peygamber efsanesiyle ilişkilendirilen, kutsal sayılan balıklarıyla bilinen bir göldür.
+
+Şanlıurfa - Urfa Kalesi: Balıklıgöl'e hakim bir tepede yer alan tarihi bir kaledir.
+
+Şanlıurfa - Harran: Konik kubbeli kerpiç evleri ve antik üniversitesiyle bilinen tarihi bir yerleşim yeridir.
+
+Şanlıurfa - Şanlıurfa Arkeoloji Müzesi: Göbeklitepe başta olmak üzere bölge kazılarından çıkan eserlerin sergilendiği bir müzedir.
+
+Diyarbakır - Diyarbakır Surları: Çin Seddi'nden sonra dünyanın en uzun ikinci suru olarak bilinen, UNESCO Dünya Mirası listesindeki tarihi bir surdur.
+
+Diyarbakır - Hevsel Bahçeleri: Dicle Nehri kıyısında yer alan, tarihi tarım alanlarıyla bilinen yeşil bir vadidir.
+
+Diyarbakır - On Gözlü Köprü: Dicle Nehri üzerinde yer alan, on kemeriyle bilinen tarihi bir taş köprüdür.
+
+Diyarbakır - Ulu Cami: Anadolu'nun en eski camilerinden biri olarak kabul edilen tarihi bir yapıdır.
+
+Diyarbakır - Cahit Sıtkı Tarancı Evi: Şairin doğduğu evde kurulmuş, geleneksel mimariyi yansıtan bir müzedir.
+
+Mardin - Mardin Eski Şehir: Taş evleri ve dar sokaklarıyla bilinen, tanınmış tarihi bir şehir dokusudur.
+
+Mardin - Deyrulzafaran Manastırı: Süryani kültürünün önemli merkezlerinden biri olan tarihi bir manastırdır.
+
+Mardin - Kasımiye Medresesi: Taş işçiliğiyle bilinen, Akkoyunlu dönemine ait tarihi bir medresedir.
+
+Mardin - Midyat: Telkari el sanatı ve taş işçiliğiyle bilinen tarihi bir ilçedir.
+
+Mardin - Dara Antik Kenti: Roma dönemine ait yeraltı su sistemleri ve kalıntılarıyla bilinen bir ören yeridir.
+
+Batman - Hasankeyf: Kayaya oyulmuş evleri ve tarihi kalesiyle bilinen, binlerce yıllık geçmişe sahip bir yerleşim yeridir.
+
+Batman - Batman Çayı Kıyısı: Şehir merkezinden geçen, kıyısında yürüyüş alanları bulunan bir çayıdır.
+
+Batman - İluh Höyüğü: Bölgenin eski yerleşim tarihine ışık tutan bir höyüktür.
+
+Batman - Sason Yaylaları: Yüksek rakımı ve doğa güzellikleriyle bilinen bir dağ bölgesidir.
+
+Batman - Batman Müzesi: Bölgenin tarihi eserlerinin sergilendiği bir müzedir.
+
+Siirt - Aydınlar: Şeyh İbrahim Hakkı'nın türbesi ve tarihi kütüphanesiyle bilinen bir ilçedir.
+
+Siirt - Siirt Ulu Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Siirt - Siirt Kalesi: Şehre hakim bir tepede yer alan tarihi bir kale kalıntısıdır.
+
+Siirt - Botan Vadisi: Derin vadisi ve doğa manzarasıyla bilinen bir nehir vadisidir.
+
+Siirt - Herekol Dağı: Yüksek zirvesiyle dağcıların ilgisini çeken bir dağdır.
+
+Şırnak - Cudi Dağı: Nuh'un Gemisi efsanesiyle ilişkilendirilen yüksek bir dağdır.
+
+Şırnak - Nuh Nebi Türbesi: Cizre ilçesinde yer alan, Nuh Peygamber'e atfedilen tarihi bir türbedir.
+
+Şırnak - Finik Kalesi: Sarp kayalıklar üzerine kurulmuş tarihi bir kaledir.
+
+Şırnak - Şırnak Kalesi: Şehir merkezinde yer alan tarihi bir kale kalıntısıdır.
+
+Şırnak - Beytüşşebap: Yüksek dağlarıyla bilinen sınır bir ilçedir.
+
+Adıyaman - Nemrut Dağı: Zirvesindeki dev taş heykelleriyle ünlü, UNESCO Dünya Mirası listesindeki bir dağdır.
+
+Adıyaman - Cendere Köprüsü: Roma dönemine ait, tek kemeriyle bilinen tarihi bir taş köprüdür.
+
+Adıyaman - Karakuş Tümülüsü: Kommagene Krallığı dönemine ait mezar anıtı ve heykelleriyle bilinen bir alandır.
+
+Adıyaman - Perre Antik Kenti: Kaya mezarları ve tiyatrosuyla bilinen bir ören yeridir.
+
+Adıyaman - Adıyaman Kalesi: Şehir merkezinde yer alan tarihi bir kale kalıntısıdır.
+
+Kilis - Kilis Ulu Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Kilis - Kilis Kalesi: Şehre hakim bir tepede yer alan tarihi bir kale kalıntısıdır.
+
+Kilis - Kilis Müzesi: Bölgenin tarihi eserlerinin sergilendiği bir müzedir.
+
+Kilis - Öküzlü Köyü: Tarihi dokusu ve doğa güzellikleriyle bilinen bir köydür.
+
+Kilis - Elbeyli: Zeytinlikleri ve tarım alanlarıyla bilinen bir ilçedir.

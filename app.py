@@ -27,10 +27,10 @@ def ask():
 
 
 def warm_up() -> None:
-    print("Modeller yukleniyor, lutfen bekleyin...")
+    print("Modeller yükleniyor, lütfen bekleyin...")
     get_embedding_client()
     get_chat_client()
-    print("Modeller hazir. Sunucu baslatiliyor...")
+    print("Modeller hazır. Sunucu başlatılıyor...")
 
 
 if __name__ == "__main__":

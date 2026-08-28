@@ -1,0 +1,179 @@
+Zonguldak - Gökgöl Mağarası: Sarkıt ve dikitleriyle bilinen, ziyarete açık doğal bir mağaradır.
+
+Zonguldak - Kömür Madeni Müzesi: Bölgenin kömür madenciliği tarihini anlatan bir müzedir.
+
+Zonguldak - Uzunkum Plajı: Karadeniz kıyısında geniş kumsalıyla bilinen bir plaj bölgesidir.
+
+Zonguldak - Ereğli Sahili: Tarihi liman yapısıyla bilinen bir sahil bölgesidir.
+
+Zonguldak - Filyos: Antik kalıntıları ve sahil şeridiyle bilinen bir bölgedir.
+
+Bartın - Amasra: Deniz içine uzanan tarihi kalesi ve liman koyuyla bilinen bir sahil ilçesidir.
+
+Bartın - Kemerköprü: Bartın Irmağı üzerinde yer alan tarihi bir köprüdür.
+
+Bartın - İnkum Plajı: Karadeniz kıyısında popüler bir plaj ve tatil bölgesidir.
+
+Bartın - Bartın Irmağı: Şehri boydan boya geçen, kıyısında tarihi evlerin bulunduğu bir ırmaktır.
+
+Bartın - Uluyayla: Serin havası ve doğa yürüyüşleriyle bilinen bir yayla bölgesidir.
+
+Karabük - Safranbolu: Osmanlı dönemi ahşap evleriyle bilinen, UNESCO Dünya Mirası listesindeki tarihi bir kenttir.
+
+Karabük - Yenice Ormanları: Zengin bitki örtüsüyle bilinen, koruma altındaki geniş bir orman alanıdır.
+
+Karabük - İncekaya Su Kemeri: Vadi üzerinde yer alan, Osmanlı dönemine ait taş bir su kemeridir.
+
+Karabük - Karabük Demir Çelik Fabrikası: Türkiye'nin ilk büyük ağır sanayi tesislerinden biri olan tarihi bir fabrikadır.
+
+Karabük - Hızarlar Köyü: Ahşap evleri ve doğa güzellikleriyle bilinen küçük bir köydür.
+
+Kastamonu - Kastamonu Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Kastamonu - Küre Dağları Milli Parkı: Zengin orman ekosistemiyle bilinen bir milli parktır.
+
+Kastamonu - Mahmut Bey Camii: Ahşap oymacılığıyla ünlü, Kasaba köyünde yer alan tarihi bir camidir.
+
+Kastamonu - Nasrullah Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Kastamonu - Ilgaz Dağı Milli Parkı: Kış aylarında kayak için ziyaret edilen bir dağ milli parkıdır.
+
+Sinop - Sinop Kalesi ve Cezaevi: Deniz kıyısında yer alan, tarihi kale ve eski cezaeviyle bilinen bir alandır.
+
+Sinop - İnceburun: Karadeniz'in en kuzey noktası olarak bilinen bir burundur.
+
+Sinop - Hamsilos Koyu: Sakin suları ve orman manzarasıyla bilinen bir koydur.
+
+Sinop - Akliman: Doğa güzellikleri ve plajlarıyla bilinen bir koy bölgesidir.
+
+Sinop - Erfelek Tatlıca Şelaleleri: Bir dizi küçük şelaleden oluşan doğal bir alandır.
+
+Samsun - Bandırma Vapuru Müzesi: Atatürk'ün Samsun'a çıkışını simgeleyen tarihi bir gemi müzesidir.
+
+Samsun - Amisos Tepesi: Şehre hakim bir tepede yer alan, teleferikle çıkılan bir manzara noktasıdır.
+
+Samsun - Atakum Sahili: Uzun sahil şeridi ve yürüyüş yollarıyla bilinen bir bölgedir.
+
+Samsun - Ladik Gölü: Doğa yürüyüşleri için uygun bir tatlı su gölüdür.
+
+Samsun - Amazon Köyü: Tarihi Amazonlar efsanesiyle ilişkilendirilen bir bölgedir.
+
+Ordu - Boztepe: Teleferikle çıkılan, şehrin ve denizin manzarasının izlendiği bir tepedir.
+
+Ordu - Çambaşı Yaylası: Yüksek rakımlı, serin havasıyla bilinen bir yayla bölgesidir.
+
+Ordu - Perşembe Yarımadası: Doğa yürüyüşleri ve manzara noktalarıyla bilinen bir yarımadadır.
+
+Ordu - Ulugöl: Orman içinde yer alan sakin bir dağ gölüdür.
+
+Ordu - Gölköy: Yayla turizmiyle bilinen bir ilçedir.
+
+Giresun - Giresun Adası: Karadeniz'in tek adası olarak bilinen, efsaneleriyle ünlü küçük bir adadır.
+
+Giresun - Kümbet Yaylası: Fındık bahçeleri ve yayla evleriyle bilinen bir yayla bölgesidir.
+
+Giresun - Giresun Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Giresun - Aksu Deresi: Şehir merkezinden geçen, kıyısında yürüyüş yolları bulunan bir derenin adıdır.
+
+Giresun - Bektaş Yaylası: Doğa güzellikleri ve serin havasıyla bilinen bir yayla bölgesidir.
+
+Trabzon - Sümela Manastırı: Kayalık bir vadiye inşa edilmiş, freskleriyle ünlü tarihi bir manastırdır.
+
+Trabzon - Uzungöl: Çevresindeki dağ ve orman manzarasıyla bilinen popüler bir dağ gölüdür.
+
+Trabzon - Atatürk Köşkü: Atatürk'ün Trabzon ziyaretlerinde konakladığı tarihi bir köşktür.
+
+Trabzon - Boztepe: Şehre ve deniz manzarasına hakim bir tepedir.
+
+Trabzon - Trabzon Ayasofyası: Bizans dönemine ait freskleriyle bilinen tarihi bir müze-camidir.
+
+Rize - Ayder Yaylası: Kaplıcaları ve yeşil manzarasıyla ünlü, Karadeniz'in en bilinen yaylalarından biridir.
+
+Rize - Çay Bahçeleri: Yamaçlar boyunca uzanan, Rize'nin sembolü haline gelmiş çay tarlalarıdır.
+
+Rize - Zilkale: Fırtına Vadisi'nde yer alan, sarp kayalıklar üzerine kurulmuş tarihi bir kaledir.
+
+Rize - Fırtına Vadisi: Derin vadisi ve taş köprüsüyle bilinen doğal bir vadidir.
+
+Rize - Rize Kalesi: Şehir merkezinde yer alan tarihi bir kaledir.
+
+Artvin - Karagöl-Sahara Milli Parkı: Orman içindeki gölü ve yürüyüş parkurlarıyla bilinen bir milli parktır.
+
+Artvin - Şavşat: Yaylaları ve doğa güzellikleriyle bilinen bir ilçedir.
+
+Artvin - Camili: UNESCO Biyosfer Rezervi statüsüne sahip, zengin bitki örtüsüyle bilinen bir köydür.
+
+Artvin - Deriner Barajı: Türkiye'nin en yüksek barajlarından biri olarak bilinir.
+
+Artvin - Borçka: Karagöl ve doğa sporlarıyla bilinen bir ilçedir.
+
+Gümüşhane - Zigana Dağı: Kış sporları ve geçidiyle bilinen bir dağ bölgesidir.
+
+Gümüşhane - Karaca Mağarası: Sarkıt ve dikitleriyle bilinen, ziyarete açık büyük bir mağaradır.
+
+Gümüşhane - Süleymaniye Köyü: Taş evleri ve tarihi dokusuyla bilinen bir dağ köyüdür.
+
+Gümüşhane - Torul: Doğa güzellikleri ve baraj gölüyle bilinen bir ilçedir.
+
+Gümüşhane - Gümüşhane Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Bayburt - Bayburt Kalesi: Şehre hakim bir tepede yer alan, görkemli görünümüyle bilinen tarihi bir kaledir.
+
+Bayburt - Aydıntepe Yeraltı Şehri: Tarihte sığınak olarak kullanıldığı düşünülen bir yeraltı yerleşimidir.
+
+Bayburt - Baksı Müzesi: Çağdaş sanat eserlerinin sergilendiği, doğa içinde bir müzedir.
+
+Bayburt - Köp Dağı: Yüksek rakımlı, kış aylarında kar manzarasıyla bilinen bir geçittir.
+
+Bayburt - Demirözü: Yayla turizmiyle bilinen bir ilçedir.
+
+Amasya - Kral Kaya Mezarları: Pontus krallarına ait, kayalara oyulmuş büyük mezar anıtlarıdır.
+
+Amasya - Yalıboyu Evleri: Yeşilırmak kıyısında sıralanan, Osmanlı dönemi ahşap evleridir.
+
+Amasya - Amasya Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Amasya - Sultan II. Bayezid Külliyesi: Cami, medrese ve sağlık yapılarından oluşan Osmanlı dönemi bir külliyedir.
+
+Amasya - Ferhat ile Şirin Su Kanalı: Efsaneye konu olan tarihi bir su taşıma yapısıdır.
+
+Tokat - Tokat Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Tokat - Ballıca Mağarası: Sarkıt ve dikitleriyle bilinen, ziyarete açık geniş bir mağaradır.
+
+Tokat - Latifoğlu Konağı: Osmanlı dönemi konak mimarisini yansıtan tarihi bir yapıdır.
+
+Tokat - Sulusaray: Roma dönemine ait antik hamam kalıntılarıyla bilinen bir bölgedir.
+
+Tokat - Almus Barajı: Doğa manzarası ve piknik alanlarıyla bilinen bir baraj gölüdür.
+
+Çorum - Hattuşa: Hitit İmparatorluğu'nun başkenti olan, UNESCO Dünya Mirası listesindeki büyük bir antik kenttir.
+
+Çorum - Alacahöyük: Hitit öncesi döneme ait sfenksli kapısıyla bilinen bir ören yeridir.
+
+Çorum - Yazılıkaya: Hitit dönemine ait kaya kabartmalarıyla bilinen açık hava tapınağıdır.
+
+Çorum - Çorum Müzesi: Bölgede bulunan Hitit dönemi eserlerinin sergilendiği bir müzedir.
+
+Çorum - İskilip: Tarihi kalesi ve yöresel yemekleriyle bilinen bir ilçedir.
+
+Bolu - Abant Gölü: Çevresindeki yürüyüş parkuru ve orman manzarasıyla ünlü, Türkiye'nin en bilinen göletlerinden biridir.
+
+Bolu - Yedigöller Milli Parkı: Adını yedi küçük gölden alan, zengin orman dokusuyla bilinen bir milli parktır.
+
+Bolu - Gölcük Tabiat Parkı: Şehre yakın, piknik alanlarıyla bilinen küçük bir göl parkıdır.
+
+Bolu - Kartalkaya Kayak Merkezi: Kış aylarında kayak için popüler bir kayak merkezidir.
+
+Bolu - Mengen: Geleneksel aşçılık kültürüyle ünlü bir ilçedir.
+
+Düzce - Efteni Gölü: Kuş gözlemciliği için uygun, sazlık bir sulak alandır.
+
+Düzce - Akçakoca Sahili: Karadeniz kıyısında uzun bir plaj şeridine sahip bir tatil ilçesidir.
+
+Düzce - Güzeldere Şelalesi: Orman içinde yer alan doğal bir şelaledir.
+
+Düzce - Konuralp Antik Kenti: Roma dönemine ait kalıntılarıyla bilinen bir ören yeridir.
+
+Düzce - Sobran Termal Tesisleri: Termal sularıyla bilinen bir kaplıca bölgesidir.

@@ -1,0 +1,79 @@
+İzmir - Efes Antik Kenti: Selçuk ilçesinde yer alan, Celsus Kütüphanesi ile ünlü, antik çağın en iyi korunmuş kentlerinden biridir.
+
+İzmir - Saat Kulesi: Konak Meydanı'nda yer alan, şehrin sembolü haline gelmiş tarihi bir kuledir.
+
+İzmir - Kordon: Deniz kıyısı boyunca uzanan, yürüyüş ve kafeleriyle bilinen popüler bir gezi bölgesidir.
+
+İzmir - Çeşme: Alaçatı koyu ve rüzgar sörfü için uygun rüzgarlı plajlarıyla bilinen bir tatil ilçesidir.
+
+İzmir - Şirince: Bağlarından üretilen şarabıyla ve taş evleriyle bilinen küçük, tarihi bir köydür.
+
+Aydın - Aphrodisias Antik Kenti: Aşk Tanrıçası Afrodit'e adanmış tapınağı ve stadyumuyla bilinen, UNESCO Dünya Mirası listesindeki antik kenttir.
+
+Aydın - Didim: Apollon Tapınağı'nın büyük sütunlarıyla bilinen antik bir kutsal alandır.
+
+Aydın - Kuşadası: Güvercinada'sı ve limanıyla bilinen, kruvaziyer gemilerinin uğrak noktası olan bir tatil şehridir.
+
+Aydın - Milet Antik Kenti: Antik çağın önemli liman kentlerinden biri olan, tiyatrosuyla bilinen bir ören yeridir.
+
+Aydın - Dilek Yarımadası Milli Parkı: Zengin bitki ve hayvan çeşitliliğiyle bilinen, koyları ile ünlü bir milli parktır.
+
+Muğla - Ölüdeniz: Turkuaz renkli sakin lagünü ve yamaç paraşütü imkanlarıyla bilinen, Fethiye yakınında bir koydur.
+
+Muğla - Bodrum Kalesi: Sualtı Arkeoloji Müzesi'ne ev sahipliği yapan, liman kıyısında tarihi bir kaledir.
+
+Muğla - Marmaris: Marinası ve gece hayatıyla bilinen, Ege ve Akdeniz'in buluştuğu noktada bir tatil şehridir.
+
+Muğla - Dalyan: Kaunos Antik Kenti'ndeki kaya mezarları ve İztuzu Plajı'ndaki caretta carettalarla bilinen bir bölgedir.
+
+Muğla - Saklıkent Kanyonu: Derin ve dar kaya duvarlarıyla bilinen, yürüyüş parkurlarıyla ziyaret edilen bir kanyondur.
+
+Denizli - Pamukkale: Beyaz travertenleri ve yanındaki Hierapolis antik kentiyle bilinen, UNESCO Dünya Mirası listesindeki bir doğal oluşumdur.
+
+Denizli - Laodikya Antik Kenti: Erken Hıristiyanlık döneminde önemli bir merkez olan, geniş kalıntılarıyla bilinen bir antik kenttir.
+
+Denizli - Honaz Dağı Milli Parkı: Zengin ormanlık alanı ve yürüyüş parkurlarıyla bilinen bir dağ milli parkıdır.
+
+Denizli - Buldan: Geleneksel dokumacılığı ve el sanatlarıyla bilinen tarihi bir ilçedir.
+
+Denizli - Akhan Kervansarayı: Selçuklu dönemine ait, ticaret yolu üzerinde yer alan tarihi bir kervansaraydır.
+
+Manisa - Spil Dağı Milli Parkı: Efsanelere konu olan Ağladağı kayalığı ve zengin bitki örtüsüyle bilinen bir milli parktır.
+
+Manisa - Manisa Ulu Camii: Şehrin merkezinde yer alan, Osmanlı dönemi mimarisini yansıtan tarihi bir camidir.
+
+Manisa - Sardes Antik Kenti: Lidya Krallığı'nın başkenti olmuş, Artemis Tapınağı kalıntılarıyla bilinen bir ören yeridir.
+
+Manisa - Muradiye Camii: Mimar Sinan'ın eserlerinden biri olan tarihi bir camidir.
+
+Manisa - Kırkağaç: Yerel pazarları ve tarihi konaklarıyla bilinen bir ilçedir.
+
+Uşak - Uşak Arkeoloji Müzesi: Bölgede bulunan antik dönem eserlerinin sergilendiği bir müzedir.
+
+Uşak - Ulubey Kanyonu: Derinliği ve genişliğiyle Türkiye'nin en büyük kanyonlarından biri olarak bilinir.
+
+Uşak - Blaundos Antik Kenti: Tiyatrosu ve kaya mezarlarıyla bilinen, az bilinen ama etkileyici bir antik kenttir.
+
+Uşak - Eşme Kaplıcaları: Termal sularıyla bilinen, sağlık turizmi için ziyaret edilen bir ilçedir.
+
+Uşak - Uşak Ulu Camii: Şehrin merkezinde yer alan tarihi bir camidir.
+
+Kütahya - Çini Müzesi: Kütahya'nın geleneksel el sanatı olan çinicilik ürünlerinin sergilendiği bir müzedir.
+
+Kütahya - Kütahya Kalesi: Şehre hakim bir tepede yer alan tarihi bir kaledir.
+
+Kütahya - Aizanoi Antik Kenti: Çavdarhisar ilçesinde yer alan, iyi korunmuş Zeus Tapınağı'yla bilinen bir antik kenttir.
+
+Kütahya - Frig Vadisi: Kaya oymaları ve tarihi izleriyle bilinen geniş bir vadi bölgesidir.
+
+Kütahya - Yoncalı Kaplıcaları: Termal sularıyla bilinen bir kaplıca bölgesidir.
+
+Afyonkarahisar - Afyon Kalesi: Şehre hakim yüksek bir kayalık üzerinde yer alan tarihi bir kaledir.
+
+Afyonkarahisar - Ömer-Gecek Kaplıcaları: Termal otelleriyle bilinen, sağlık turizmi için popüler bir bölgedir.
+
+Afyonkarahisar - Frig Vadisi: Afyonkarahisar sınırlarına da uzanan, kaya oymalarıyla bilinen tarihi bir vadidir.
+
+Afyonkarahisar - Sandıklı: Termal kaynakları ve tarım ürünleriyle bilinen bir ilçedir.
+
+Afyonkarahisar - Ulu Cami: Selçuklu dönemine ait, ahşap sütunlarıyla bilinen tarihi bir camidir.

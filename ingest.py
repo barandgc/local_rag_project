@@ -1,5 +1,6 @@
 import glob
 import os
+import sys
 from typing import List
 
 from db import clear_documents, init_db, insert_document
@@ -18,8 +19,9 @@ def main() -> None:
     clear_documents()
 
     total_chunks = 0
-    for path in sorted(glob.glob(os.path.join(DOCUMENTS_DIR, "*.txt"))):
-        source = os.path.basename(path)
+    pattern = os.path.join(DOCUMENTS_DIR, "**", "*.txt")
+    for path in sorted(glob.glob(pattern, recursive=True)):
+        source = os.path.relpath(path, DOCUMENTS_DIR)
         with open(path, "r", encoding="utf-8") as f:
             text = f.read()
 
@@ -29,10 +31,11 @@ def main() -> None:
             insert_document(source, chunk, embedding)
             total_chunks += 1
 
-        print(f"Islendi: {source} ({len(chunks)} chunk)")
+        print(f"İşlendi: {source} ({len(chunks)} chunk)")
 
-    print(f"\nToplam {total_chunks} chunk veritabanina eklendi.")
+    print(f"\nToplam {total_chunks} chunk veritabanına eklendi.")
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
     main()

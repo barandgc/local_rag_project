@@ -3,115 +3,396 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Turkiye Gezi Rehberi Asistani</title>
+<title>Türkiye Gezi Rehberi Asistanı</title>
 <style>
   :root {
-    --bg: #faf6f0;
-    --panel: #ffffff;
-    --border: #e8ddd0;
-    --text: #2e2620;
-    --muted: #8a7c6c;
-    --accent: #c1682f;
-    --accent-dark: #9c521f;
-    --user-bubble: #2e2620;
-    --user-text: #faf6f0;
-    --assistant-bubble: #f3ece2;
-    --shadow: 0 2px 10px rgba(46, 38, 32, 0.08);
+    --text: #14171f;
+    --muted: #6b7280;
+    --accent: #2952cc;
+    --accent-dark: #1f3fa3;
+    --accent-soft: rgba(41, 82, 204, 0.14);
+    --user-bubble: rgba(31, 41, 55, 0.88);
+    --user-text: #f8fafc;
+    --assistant-bubble: rgba(255, 255, 255, 0.72);
+    --danger-bubble: rgba(253, 236, 236, 0.9);
+    --danger-text: #9c2b2b;
+
+    --glass-bg: rgba(255, 255, 255, 0.46);
+    --glass-border: rgba(255, 255, 255, 0.55);
+    --glass-shadow: 0 8px 32px rgba(15, 17, 23, 0.18);
+
+    --sidebar-bg: rgba(12, 13, 16, 0.5);
+    --sidebar-text: #f2f3f5;
+    --sidebar-muted: #b7b9c0;
+    --sidebar-border: rgba(255, 255, 255, 0.1);
+    --sidebar-hover: rgba(255, 255, 255, 0.08);
+    --sidebar-active: rgba(255, 255, 255, 0.14);
+
+    --scrim: linear-gradient(180deg, rgba(10, 11, 14, 0.35) 0%, rgba(10, 11, 14, 0.55) 100%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #eef0f4;
+      --muted: #a7acb8;
+      --accent: #7b9bf0;
+      --accent-dark: #a8c0f8;
+      --accent-soft: rgba(123, 155, 240, 0.22);
+      --user-bubble: rgba(43, 48, 64, 0.85);
+      --user-text: #f2f4f8;
+      --assistant-bubble: rgba(23, 26, 33, 0.6);
+      --danger-bubble: rgba(42, 26, 26, 0.85);
+      --danger-text: #e29a9a;
+
+      --glass-bg: rgba(20, 22, 28, 0.42);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+
+      --sidebar-bg: rgba(8, 9, 11, 0.55);
+      --sidebar-border: rgba(255, 255, 255, 0.08);
+      --sidebar-hover: rgba(255, 255, 255, 0.06);
+      --sidebar-active: rgba(255, 255, 255, 0.1);
+
+      --scrim: linear-gradient(180deg, rgba(5, 6, 8, 0.55) 0%, rgba(5, 6, 8, 0.72) 100%);
+    }
   }
 
   * { box-sizing: border-box; }
 
+  html, body { height: 100%; }
+
   body {
     margin: 0;
-    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    background: var(--bg);
+    font-family: "Segoe UI", -apple-system, Roboto, Arial, sans-serif;
     color: var(--text);
     display: flex;
+    overflow: hidden;
+  }
+
+  /* ---------- Full-page photo background ---------- */
+
+  .page-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+    background: #15171c;
+  }
+
+  .page-bg .scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: var(--scrim);
+  }
+
+  .scene {
+    position: absolute;
+    inset: -3%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: sceneCycle 54s infinite ease-in-out;
+    will-change: opacity, transform;
+  }
+
+  .scene-1 { background-image: url("{{ url_for('static', filename='images/cappadocia.jpg') }}"); animation-delay: 0s; }
+  .scene-2 { background-image: url("{{ url_for('static', filename='images/pamukkale.jpg') }}"); animation-delay: 9s; }
+  .scene-3 { background-image: url("{{ url_for('static', filename='images/istanbul.jpg') }}"); animation-delay: 18s; }
+  .scene-4 { background-image: url("{{ url_for('static', filename='images/ephesus.jpg') }}"); animation-delay: 27s; }
+  .scene-5 { background-image: url("{{ url_for('static', filename='images/nemrut.jpg') }}"); animation-delay: 36s; }
+  .scene-6 { background-image: url("{{ url_for('static', filename='images/safranbolu.jpg') }}"); animation-delay: 45s; }
+
+  @keyframes sceneCycle {
+    0%   { opacity: 0;   transform: scale(1.04); }
+    3%   { opacity: 1;   transform: scale(1.04); }
+    15%  { opacity: 1;   transform: scale(1.1); }
+    18%  { opacity: 0;   transform: scale(1.12); }
+    100% { opacity: 0;   transform: scale(1.04); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scene { animation: none; }
+    .scene-1 { opacity: 1; }
+  }
+
+  /* ---------- Sidebar (glass) ---------- */
+
+  .sidebar {
+    width: 268px;
+    flex-shrink: 0;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    color: var(--sidebar-text);
+    border-right: 1px solid var(--sidebar-border);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+    transition: transform 0.2s ease;
+    z-index: 20;
+  }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 4px 2px;
+  }
+
+  .sidebar-header .brand-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 24px 16px;
+    flex-shrink: 0;
+  }
+
+  .sidebar-header .brand-icon svg { width: 15px; height: 15px; stroke: #fff; }
+
+  .sidebar-header span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .new-chat-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--sidebar-border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--sidebar-text);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .new-chat-btn:hover { background: var(--sidebar-hover); }
+  .new-chat-btn svg { width: 15px; height: 15px; stroke: currentColor; flex-shrink: 0; }
+
+  .sidebar-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--sidebar-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 8px 8px 0;
+  }
+
+  .conv-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-right: 2px;
+  }
+
+  .conv-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: var(--sidebar-text);
+  }
+
+  .conv-item:hover { background: var(--sidebar-hover); }
+  .conv-item.active { background: var(--sidebar-active); }
+
+  .conv-title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .conv-delete {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: var(--sidebar-muted);
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+  }
+
+  .conv-delete:hover { background: var(--sidebar-border); color: var(--danger-text); }
+  .conv-item:hover .conv-delete { display: flex; }
+  .conv-delete svg { width: 13px; height: 13px; stroke: currentColor; }
+
+  .sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 15;
+  }
+
+  .sidebar-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: var(--text);
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+  }
+
+  .sidebar-toggle svg { width: 17px; height: 17px; stroke: currentColor; }
+
+  /* ---------- Main ---------- */
+
+  .main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 32px 16px;
   }
 
   .app {
     width: 100%;
-    max-width: 720px;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 4px 2px 0;
+  }
+
+  .brand { display: flex; align-items: center; gap: 12px; }
+
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .brand-icon svg { width: 20px; height: 20px; stroke: #fff; }
+
+  .brand-text h1 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #fff;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  }
+
+  .brand-text p {
+    margin: 2px 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.82rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .header-left { display: flex; align-items: center; gap: 10px; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    padding: 6px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #3ecf6a; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .chip {
+    font-size: 0.82rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .chip:hover { border-color: var(--accent); }
+
+  /* ---------- Chat panel (frosted glass, foreground) ---------- */
+
+  .chat-panel {
+    position: relative;
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    box-shadow: var(--glass-shadow);
+    flex: 1;
+    min-height: 380px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--glass-bg);
+    backdrop-filter: blur(28px) saturate(150%);
+    -webkit-backdrop-filter: blur(28px) saturate(150%);
+  }
+
+  .chat {
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  header {
-    text-align: center;
-    padding: 8px 0 4px;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-    letter-spacing: -0.01em;
-  }
-
-  header p {
-    margin: 6px 0 0;
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-
-  .badge {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 0.75rem;
-    color: var(--accent-dark);
-    background: #fbe8d8;
-    border: 1px solid #f0cba4;
-    padding: 4px 10px;
-    border-radius: 999px;
-  }
-
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-  }
-
-  .chip {
-    font-size: 0.82rem;
-    background: var(--panel);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 7px 12px;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: background 0.15s, border-color 0.15s;
-  }
-
-  .chip:hover {
-    background: #fbe8d8;
-    border-color: var(--accent);
-  }
-
-  .chat {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow);
-    flex: 1;
-    min-height: 360px;
-    max-height: 55vh;
-    overflow-y: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .msg {
-    display: flex;
-    flex-direction: column;
-    max-width: 82%;
-    animation: fadeIn 0.2s ease;
-  }
+  .msg { display: flex; flex-direction: column; max-width: 84%; animation: fadeIn 0.18s ease; }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(4px); }
@@ -122,37 +403,33 @@
   .msg.assistant { align-self: flex-start; align-items: flex-start; }
 
   .bubble {
-    padding: 10px 14px;
-    border-radius: 14px;
-    line-height: 1.45;
-    font-size: 0.95rem;
+    padding: 11px 15px;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-size: 0.94rem;
     white-space: pre-wrap;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .msg.user .bubble {
     background: var(--user-bubble);
     color: var(--user-text);
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 3px;
   }
 
   .msg.assistant .bubble {
     background: var(--assistant-bubble);
+    border: 1px solid var(--glass-border);
     color: var(--text);
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 3px;
   }
 
-  .meta {
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-top: 4px;
-    padding: 0 4px;
-  }
+  .msg.assistant .bubble.error { background: var(--danger-bubble); color: var(--danger-text); }
 
-  .typing {
-    display: flex;
-    gap: 4px;
-    padding: 12px 14px;
-  }
+  .meta { font-size: 0.72rem; color: var(--muted); margin-top: 4px; padding: 0 4px; }
+
+  .typing { display: flex; gap: 4px; padding: 13px 15px; }
 
   .typing span {
     width: 6px;
@@ -170,90 +447,330 @@
     30% { transform: translateY(-4px); opacity: 1; }
   }
 
-  form {
+  /* ---------- Composer (glass, foreground) ---------- */
+
+  form.composer {
     display: flex;
-    gap: 8px;
+    align-items: flex-end;
+    gap: 6px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(28px) saturate(150%);
+    -webkit-backdrop-filter: blur(28px) saturate(150%);
+    border: 1px solid var(--glass-border);
+    border-radius: 26px;
+    padding: 6px 6px 6px 18px;
+    box-shadow: var(--glass-shadow);
+    transition: border-color 0.15s, box-shadow 0.15s;
   }
 
-  input[type="text"] {
+  form.composer:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+  .composer-input {
     flex: 1;
-    padding: 13px 16px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    background: var(--panel);
-    color: var(--text);
-    font-size: 0.95rem;
+    border: none;
     outline: none;
+    resize: none;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 9px 0;
+    max-height: 160px;
   }
 
-  input[type="text"]:focus {
-    border-color: var(--accent);
-  }
+  .composer-input::placeholder { color: var(--muted); }
 
-  button {
-    padding: 0 20px;
-    border-radius: 12px;
+  .composer-send {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 50%;
     border: none;
     background: var(--accent);
     color: #fff;
-    font-size: 0.95rem;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background 0.15s;
+    transition: background 0.15s, opacity 0.15s;
   }
 
-  button:hover:not(:disabled) { background: var(--accent-dark); }
-  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .composer-send svg { width: 17px; height: 17px; stroke: currentColor; }
+  .composer-send:hover:not(:disabled) { background: var(--accent-dark); }
+  .composer-send:disabled { opacity: 0.4; cursor: not-allowed; }
 
   footer {
     text-align: center;
     font-size: 0.78rem;
-    color: var(--muted);
-    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 4px;
+  }
+
+  @media (max-width: 860px) {
+    .sidebar { position: fixed; top: 0; left: 0; transform: translateX(-100%); }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-backdrop.open { display: block; }
+    .sidebar-toggle { display: flex; }
+  }
+
+  @media (max-width: 480px) {
+    .main { padding: 16px 10px; }
+    .chat { padding: 16px; }
   }
 </style>
 </head>
 <body>
-<div class="app">
-  <header>
-    <h1>🗺️ Turkiye Gezi Rehberi Asistani</h1>
-    <p>Kapadokya, Pamukkale, Efes, Nemrut Dagi, Oludeniz ve Safranbolu hakkinda sorular sorabilirsin.</p>
-    <span class="badge">🔒 Yerel RAG · Foundry Local ile tamamen cevrimdisi calisir</span>
-  </header>
-
-  <div class="chips" id="chips">
-    <div class="chip">Kapadokya'daki peri bacalari nasil olustu?</div>
-    <div class="chip">Pamukkale'deki Kleopatra Havuzu'nun ozelligi nedir?</div>
-    <div class="chip">Oludeniz hangi spor icin unludur?</div>
-    <div class="chip">Nemrut Dagi UNESCO listesine hangi yil alindi?</div>
-  </div>
-
-  <div class="chat" id="chat">
-    <div class="msg assistant">
-      <div class="bubble">Merhaba! Bilgi tabanimdaki 6 gezi noktasi hakkinda soru sorabilirsin. Kapsam disi bir soru sorarsan sana "bilmiyorum" derim — uydurma cevap vermem.</div>
-    </div>
-  </div>
-
-  <form id="form">
-    <input type="text" id="question" placeholder="Sorunu yaz..." autocomplete="off" autofocus>
-    <button type="submit" id="send">Gonder</button>
-  </form>
-
-  <footer>Bu asistan sadece 6 dokumandaki bilgiyi kullanir; genel bilgi kaynagi degildir.</footer>
+<div class="page-bg" aria-hidden="true">
+  <div class="scene scene-1"></div>
+  <div class="scene scene-2"></div>
+  <div class="scene scene-3"></div>
+  <div class="scene scene-4"></div>
+  <div class="scene scene-5"></div>
+  <div class="scene scene-6"></div>
+  <div class="scrim"></div>
 </div>
 
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/>
+        <circle cx="12" cy="10" r="2.5"/>
+      </svg>
+    </div>
+    <span>Gezi Rehberi</span>
+  </div>
+
+  <button class="new-chat-btn" id="newChatBtn" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M5 12h14"/>
+    </svg>
+    Yeni Sohbet
+  </button>
+
+  <div class="sidebar-label">Sohbetler</div>
+  <div class="conv-list" id="convList"></div>
+</aside>
+
+<main class="main">
+  <div class="app">
+    <header>
+      <div class="header-left">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Sohbetleri göster">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <div class="brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1>Türkiye Gezi Rehberi Asistanı</h1>
+            <p>Bilgi tabanındaki gezi noktaları hakkında soru sorun</p>
+          </div>
+        </div>
+      </div>
+      <span class="badge"><span class="dot"></span>Yerel RAG · Çevrimdışı çalışır</span>
+    </header>
+
+    <div class="chips" id="chips">
+      <div class="chip">Kapadokya'daki peri bacaları nasıl oluştu?</div>
+      <div class="chip">Antalya'da Kaleiçi neyle bilinir?</div>
+      <div class="chip">Safranbolu evleri hangi dönemden kalmadır?</div>
+      <div class="chip">Bartın'daki Amasra neyle bilinir?</div>
+      <div class="chip">Şelalesi olan bir yer önerir misin?</div>
+    </div>
+
+    <div class="chat-panel">
+      <div class="chat" id="chat"></div>
+    </div>
+
+    <form id="form" class="composer">
+      <textarea id="question" class="composer-input" placeholder="Sorunuzu yazın..." rows="1" autocomplete="off" autofocus></textarea>
+      <button type="submit" id="send" class="composer-send" aria-label="Gönder">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </button>
+    </form>
+
+    <footer>Bu asistan yalnızca kendi bilgi tabanındaki bilgileri kullanır; genel bir bilgi kaynağı değildir.</footer>
+  </div>
+</main>
+
 <script>
+  const STORAGE_KEY = 'tgr_conversations_v1';
+  const ACTIVE_KEY = 'tgr_active_id_v1';
+  const WELCOME_TEXT = 'Merhaba! Türkiye\'nin farklı bölgelerindeki iller ve gezi noktaları hakkında size yardımcı olabilirim. Nasıl yardımcı olabilirim?';
+
   const chat = document.getElementById('chat');
   const form = document.getElementById('form');
   const input = document.getElementById('question');
   const sendBtn = document.getElementById('send');
   const chips = document.getElementById('chips');
+  const convList = document.getElementById('convList');
+  const newChatBtn = document.getElementById('newChatBtn');
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
 
-  function addMessage(role, text, meta) {
+  let conversations = [];
+  let activeId = null;
+
+  function safeLoad() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      return [];
+    }
+  }
+
+  function save() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
+      localStorage.setItem(ACTIVE_KEY, activeId || '');
+    } catch (err) {
+      /* localStorage unavailable — continue without persistence */
+    }
+  }
+
+  function newConversation() {
+    return {
+      id: 'c_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8),
+      title: 'Yeni Sohbet',
+      createdAt: Date.now(),
+      messages: [{ role: 'assistant', text: WELCOME_TEXT }]
+    };
+  }
+
+  function init() {
+    conversations = safeLoad();
+    let storedActive = null;
+    try { storedActive = localStorage.getItem(ACTIVE_KEY); } catch (err) {}
+
+    if (conversations.length === 0) {
+      const conv = newConversation();
+      conversations = [conv];
+      activeId = conv.id;
+    } else {
+      activeId = conversations.some(c => c.id === storedActive) ? storedActive : conversations[0].id;
+    }
+    save();
+    renderSidebar();
+    renderChat();
+  }
+
+  function getActive() {
+    return conversations.find(c => c.id === activeId);
+  }
+
+  function titleFromText(text) {
+    const trimmed = text.trim().replace(/\s+/g, ' ');
+    return trimmed.length > 38 ? trimmed.slice(0, 38) + '…' : trimmed;
+  }
+
+  function renderSidebar() {
+    convList.innerHTML = '';
+    conversations.forEach((conv) => {
+      const item = document.createElement('div');
+      item.className = 'conv-item' + (conv.id === activeId ? ' active' : '');
+      item.dataset.id = conv.id;
+
+      const title = document.createElement('span');
+      title.className = 'conv-title';
+      title.textContent = conv.title;
+      item.appendChild(title);
+
+      const del = document.createElement('button');
+      del.type = 'button';
+      del.className = 'conv-delete';
+      del.title = 'Sohbeti sil';
+      del.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0-1 14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L4 6"/></svg>';
+      del.addEventListener('click', (e) => {
+        e.stopPropagation();
+        deleteConversation(conv.id);
+      });
+      item.appendChild(del);
+
+      item.addEventListener('click', () => setActive(conv.id));
+      convList.appendChild(item);
+    });
+  }
+
+  function renderChat() {
+    const conv = getActive();
+    chat.innerHTML = '';
+    if (!conv) return;
+    conv.messages.forEach((m) => addMessageEl(m.role, m.text, m.meta, m.isError));
+    chips.style.display = conv.messages.length <= 1 ? 'flex' : 'none';
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function setActive(id) {
+    if (id === activeId) { closeSidebarOnMobile(); return; }
+    activeId = id;
+    save();
+    renderSidebar();
+    renderChat();
+    closeSidebarOnMobile();
+  }
+
+  function deleteConversation(id) {
+    conversations = conversations.filter(c => c.id !== id);
+    if (conversations.length === 0) {
+      const conv = newConversation();
+      conversations = [conv];
+      activeId = conv.id;
+    } else if (id === activeId) {
+      activeId = conversations[0].id;
+    }
+    save();
+    renderSidebar();
+    renderChat();
+  }
+
+  newChatBtn.addEventListener('click', () => {
+    const conv = newConversation();
+    conversations.unshift(conv);
+    activeId = conv.id;
+    save();
+    renderSidebar();
+    renderChat();
+    closeSidebarOnMobile();
+    input.focus();
+  });
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    sidebarBackdrop.classList.add('open');
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    sidebarBackdrop.classList.remove('open');
+  }
+  function closeSidebarOnMobile() {
+    if (window.innerWidth <= 860) closeSidebar();
+  }
+  sidebarToggle.addEventListener('click', () => {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  sidebarBackdrop.addEventListener('click', closeSidebar);
+
+  function addMessageEl(role, text, meta, isError) {
     const msg = document.createElement('div');
     msg.className = 'msg ' + role;
     const bubble = document.createElement('div');
-    bubble.className = 'bubble';
+    bubble.className = 'bubble' + (isError ? ' error' : '');
     bubble.textContent = text;
     msg.appendChild(bubble);
     if (meta) {
@@ -284,14 +801,42 @@
     if (el) el.remove();
   }
 
+  function resetInputHeight() {
+    input.style.height = 'auto';
+  }
+
+  function autoResizeInput() {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 160) + 'px';
+  }
+
+  input.addEventListener('input', autoResizeInput);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      form.requestSubmit();
+    }
+  });
+
   async function sendQuestion(question) {
     if (!question.trim()) return;
+    const conv = getActive();
+    if (!conv) return;
 
-    addMessage('user', question);
+    const isFirstUserMessage = !conv.messages.some(m => m.role === 'user');
+    conv.messages.push({ role: 'user', text: question });
+    if (isFirstUserMessage) {
+      conv.title = titleFromText(question);
+      renderSidebar();
+    }
+    chips.style.display = 'none';
+    addMessageEl('user', question);
     input.value = '';
+    resetInputHeight();
     input.disabled = true;
     sendBtn.disabled = true;
     addTyping();
+    save();
 
     try {
       const res = await fetch('/api/ask', {
@@ -299,13 +844,19 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question })
       });
+      if (!res.ok) throw new Error('request failed');
       const data = await res.json();
       removeTyping();
-      addMessage('assistant', data.answer, `${data.elapsed}s`);
+      const meta = `${data.elapsed}s`;
+      conv.messages.push({ role: 'assistant', text: data.answer, meta });
+      addMessageEl('assistant', data.answer, meta);
     } catch (err) {
       removeTyping();
-      addMessage('assistant', 'Bir hata olustu, sunucuya ulasilamadi.');
+      const errText = 'Sunucuya ulaşılamadı. Lütfen tekrar deneyin.';
+      conv.messages.push({ role: 'assistant', text: errText, isError: true });
+      addMessageEl('assistant', errText, null, true);
     } finally {
+      save();
       input.disabled = false;
       sendBtn.disabled = false;
       input.focus();
@@ -322,6 +873,8 @@
       sendQuestion(e.target.textContent);
     }
   });
+
+  init();
 </script>
 </body>
 </html>
